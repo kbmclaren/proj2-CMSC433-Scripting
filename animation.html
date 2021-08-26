@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <script>
+        var global_x = 0; 
+        var global_y = 0; 
+        var global_alpha = 1; 
+
+        function draw(){
+            var my_canvas = document.getElementById("canvas7"); 
+            my_canvas.width  = window.innerWidth;
+            my_canvas.height = window.innerHeight;
+            var context = my_canvas.getContext('2d');
+            
+            context.clearRect(0, 0, 300, 300); // clear canvas 
+            global_alpha = global_alpha - 0.01;
+            if (global_alpha < 0){ 
+                global_alpha = 1
+            }
+
+            context.fillStyle="rgba(0,0,0," + global_alpha + ")"; 
+            context.fillRect(global_x, global_y,100,100);
+
+            if(global_x > 500){
+            global_x = 0
+            } else{
+            global_x = global_x + 0.5;
+            }
+
+            if(global_y > 500){
+            global_y = 0
+            } else{
+            global_y = global_y + 0.5;
+            }
+
+            window.requestAnimationFrame(draw);
+        }
+        window.requestAnimationFrame(draw);
+    </script>
+<body>
+    <canvas id="canvas7">Canvas is unsupported </canvas>
+</body>
+</html>

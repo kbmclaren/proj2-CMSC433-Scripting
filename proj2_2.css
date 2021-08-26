@@ -1,0 +1,13 @@
+/******************************************************************
+//File: proj2_2.css
+//Author: Caleb M. McLaren
+//Email: mclaren1@umbc.edu
+//Date: July 5th, 2021
+//Course: CMSC 433 Scripting - Dr. Dixon
+//Description: css file augmenting the canvas 
+******************************************************************/
+
+#otherImage {
+    border: 1px solid black;
+    position: absolute;
+}

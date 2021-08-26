@@ -1,0 +1,54 @@
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <canvas id="firstCanvas">
+            Does this go here?
+        </canvas>
+        <script>
+            var first_canvas = document.getElementById("firstCanvas"); 
+            var context = first_canvas.getContext('2d'); 
+            /* context.strokeRect(0,0,100,100); 
+            context.fillRect(90,90,50,50); 
+            /*context.clearRect(100,100,25,25);
+            context.fillRect(126,126,10000,10000); */
+
+            /* context.beginPath();
+            context.lineTo(100,100); 
+            context.lineTo(0,0); 
+            context.stroke(); */
+
+            /* context.beginPath();
+            context.moveTo(50,50); 
+            context.lineTo(100,100); 
+            context.lineTo(100,50); 
+            context.fill(); */
+
+            context.beginPath();
+            context.moveTo(50,50); 
+            context.lineTo(100,100); 
+            context.lineTo(100,50); 
+            context.stroke(); 
+            /* context.beginPath(); 
+            context.moveTo(150,150); 
+            context.lineTo(175,150); 
+            context.stroke() */
+
+            /* context.beginPath();
+            context.moveTo(50,50); 
+            context.lineTo(100,100); 
+            context.lineTo(100,50); 
+            context.closePath(); 
+            context.stroke(); */
+
+            /* context.fillStyle="rgba(255,0,0,0.25)" 
+            context.fillRect(10,10,100,100); 
+            context.fillStyle="rgba(0,0,255,0.5)" 
+            context.fillRect(50,50,100,100); */
+
+
+        </script>
+        
+    </body>
+</html>
